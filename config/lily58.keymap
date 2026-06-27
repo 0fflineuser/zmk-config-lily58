@@ -34,10 +34,10 @@
 
         lower_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
+            // | MUTE  | VOL- | VOL+ | PREV | PLAY | NEXT |                   | BRT- | BRT+ |       |      | PSCRN |       |
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
             // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
+            // | RCTRL |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
             //                     |      |      |      |        |  |       |      |       |       |
 
             display-name = "Lower";
@@ -54,15 +54,15 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
+            // |       |     |     |      |      |      |                   | BTCLR | BT0 | BT1 | BT2 | BT3 | BT4 |
+            // |   `   |     |     |      |      |      |                   |       |     |     |     |     | PGUP |
+            // |   1   |  2  |  3  |  4   |  5   |  6   |                   | DEL   |   <-  |   v   |  ^  |  ->  | PGDN |
+            // |   7   |  8  |  9  |  0   |      |      |        |  |       |  +    |   -   |   =   |  [  |   ]  |   \  |
             //                     |      |      |      |        |  |       |      |       |       |
 
             display-name = "Raise";
             bindings = <
-&trans           &trans           &trans           &trans           &trans           &trans                             &bt BT_CLR   &bt BT_PRV  &bt BT_NXT  &none     &none      &none
+&trans           &trans           &trans           &trans           &trans           &trans                             &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &kp GRAVE        &trans           &trans           &trans           &trans           &trans                             &trans       &trans      &trans      &trans    &trans     &kp PG_UP
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                    &kp DELETE   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT  &kp PAGE_DOWN
 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans           &trans           &trans    &trans  &kp KP_PLUS  &kp MINUS   &kp EQUAL   &kp LBKT  &kp RBKT   &kp BSLH
