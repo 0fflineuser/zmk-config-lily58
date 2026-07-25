@@ -81,11 +81,11 @@
             //                            |       |       |       | ENTER  |  |       |       |       |       |
             display-name = "Fn";
             bindings = <
-&kp BACKSPACE  &kp N0    &kp N9  &kp N8  &kp N7    &kp N6                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp MINUS      &kp P     &kp O   &kp I   &kp U     &kp Y                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp SQT        &kp SEMI  &kp L   &kp K   &kp J     &kp H                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp H          &kp J     &kp K   &kp L   &kp SEMI  &kp SQT                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans    &trans   &kp  RET    &trans  &trans  &trans  &trans
+&kp BACKSPACE  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp MINUS      &kp P     &kp O    &kp I      &kp U   &kp Y                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp SQT        &kp SEMI  &kp L    &kp K      &kp J   &kp H                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp RSHFT      &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N               &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans     &trans  &trans  &kp  RET    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
